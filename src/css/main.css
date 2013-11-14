@@ -14,8 +14,55 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-/* line 18, /home/indy/GIT/MoonStopWatch/src/less/main.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/indy\/GIT\/MoonStopWatch\/src\/less\/main\.less}line{font-family:\0000318}}
-body {
-  color: red;
+/* line 24, /home/indy/MoonGames/git/MoonStopWatch/src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/indy\/MoonGames\/git\/MoonStopWatch\/src\/less\/main\.less}line{font-family:\0000324}}
+.no_user_select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 41, /home/indy/MoonGames/git/MoonStopWatch/src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/indy\/MoonGames\/git\/MoonStopWatch\/src\/less\/main\.less}line{font-family:\0000341}}
+.msw-time {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 250px;
+  height: 100px;
+  margin-left: -125px;
+  margin-top: -50px;
+  vertical-align: middle;
+  text-align: center;
+  font-family: serif;
+  font-size: 80px;
+  font-weight: bold;
+}
+/* line 51, /home/indy/MoonGames/git/MoonStopWatch/src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/indy\/MoonGames\/git\/MoonStopWatch\/src\/less\/main\.less}line{font-family:\0000351}}
+.msw-button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border: black 4px solid;
+  text-align: center;
+  vertical-align: middle;
+  background-color: gainsboro;
+  color: black;
+  font-family: serif;
+  font-size: 30px;
+  padding-top: 5px;
+}
+/* line 68, /home/indy/MoonGames/git/MoonStopWatch/src/less/main.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/indy\/MoonGames\/git\/MoonStopWatch\/src\/less\/main\.less}line{font-family:\0000368}}
+.msw-button:hover {
+  background-color: beige;
 }

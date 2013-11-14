@@ -15,7 +15,57 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-body {
-    color: red;
+.position(@top, @left) {
+    position: absolute;
+    left: @left;
+    top: @top;
+}
+
+.no_user_select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.in_center(@width, @height) {
+    .position(50%, 50%);
+    width: @width * 1px;
+    height: @height * 1px;
+    margin-left: -(@width / 2) * 1px;
+    margin-top: -(@height / 2) * 1px;
+}
+
+.msw-time {
+    .in_center(250, 100);
+    vertical-align: middle;
+    text-align: center;
+
+    font-family: serif;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.msw-button {
+    .no_user_select;
+
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    border: black 4px solid;
+    text-align: center;
+    vertical-align: middle;
+    background-color: gainsboro;
+    color: black;
+
+    font-family: serif;
+    font-size: 30px;
+    padding-top: 5px;
+}
+
+.msw-button:hover {
+    background-color: beige;
 }
 
