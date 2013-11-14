@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+Copyright (C) 2013 Martin Indra <aktive at seznam.cz>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<html ng-app="MoonStopWatch">
+    <head>
+        <title>Moon Stop-watch</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script src="lib/angular.js/angular.js"></script>
+        <script src="js/controllers.js"></script>
+    </head>
+    <body ng-controller="MoonStopWatchCtrl">
+
+        <div class="msw-time">
+            <span>{{formattedTime.hours}}</span><!--
+            -->:<span>{{formattedTime.minutes}}</span><!--
+            -->:<span>{{formattedTime.seconds}}</span><!--
+            -->.<span>{{formattedTime.miliseconds}}</span>
+        </div>
+
+        <div class="msw-button msw-resetButton" ng-click="reset()">Reset</div>
+
+    </body>
+</html>
